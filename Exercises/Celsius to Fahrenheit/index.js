@@ -6,13 +6,13 @@ const transformDegree = (degrees) => {
         throw new Error('Invalid')
     }
     //ideal flow
-    let updatedDegree = Number(degrees.toUpperCase().replace('F', ''))
+    let updatedDegree = Number(degrees.replace('F', ''))
     let formula = (fahrenheit) => (fahrenheit - 32) * 5/9
     let degreeSing = 'C'
 
     //alternate flow
     if (celsiusExists) {
-        updatedDegree = Number(degrees.toUpperCase().replace('C', ''))
+        updatedDegree = Number(degrees.replace('C', ''))
         formula = celsius => celsius * 9/5 + 32
         degreeSing = 'F'
     }
