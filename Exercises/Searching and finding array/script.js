@@ -58,3 +58,18 @@ const totalAuthor = () => {
 }
 
 totalAuthor()
+
+const booksOfAuthor = (author) => {
+    let books = []
+
+    for (const category of booksByCategory) {
+        for (const book of category.books) {
+            if(book.author === author) {
+                books.push(book.title)
+            }
+        }
+    }
+
+    console.log(`Books of ${author}:  ${books.join(", ")}`)
+}
+booksOfAuthor("J.K. Rowling")
