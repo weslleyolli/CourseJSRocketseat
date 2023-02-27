@@ -42,3 +42,19 @@ for (const category of booksByCategory) {
     console.log('total number of books in the category: ', category.category)
     console.log(category.books.length)
 }
+
+const totalAuthor = () => {
+    let authorCount = []
+
+    for (const category of booksByCategory) {
+        for (const book of category.books) {
+            if(authorCount.indexOf(book.author) == -1){
+                authorCount.push(book.author)
+            }
+        }
+    }
+
+    console.log("Total of authors: ", authorCount.length)
+}
+
+totalAuthor()
