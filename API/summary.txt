@@ -1,0 +1,7 @@
+principais verbos [GET, POST, PUT, DELETE, PATCH]
+
+Get: a API provides information
+Put: a API receive informations to updates of the one or more register
+Post: a API receive informations that must or no be registered
+Delete: a API receive identifiers of register that must be deleted
+Patch: a API receive informations to update of a register
