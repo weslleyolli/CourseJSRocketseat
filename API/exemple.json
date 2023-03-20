@@ -1,0 +1,14 @@
+{
+    "name": "Weslley Oliveira",
+    "city": "Campina Grande",
+    "Phone": 993712450,
+    "favorites_books": [
+        "clean code",
+        "Harry Potter",
+        "1% to day"
+    ],
+    "hobbys": {
+        "week": "Programmer",
+        "weekend": "go to the restaurants"
+    }
+}
